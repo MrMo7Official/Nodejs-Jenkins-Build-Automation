@@ -7,7 +7,6 @@ Show all your available jobs, choose which one to build, show build logs and wil
 ## Getting Started
 
 ### Dependencies
-
 * Node v12 and higher 
 * Tested on Jenkins v2
 * Tested on Windows and Linux ( Ubuntu ), i assume it works on all OS that have Node installed
@@ -43,10 +42,7 @@ node build.js
 ```
 and have fun
 
-## Authors
-
-Contributors names and contact info
-
+## Author and contact info 
 * Mohamed Waheed Shalabi
 * email : mohamedshalabi.official@gmail.com
 
