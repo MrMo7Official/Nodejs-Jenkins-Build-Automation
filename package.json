@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-jenkins-build-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrMo7Official/Nodejs-Jenkins-Build-Automation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrMo7Official/Nodejs-Jenkins-Build-Automation/issues"
+  },
+  "homepage": "https://github.com/MrMo7Official/Nodejs-Jenkins-Build-Automation#readme",
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "axios": "^1.1.3",
+    "dotenv": "^16.0.3",
+    "fs-extra": "^10.1.0",
+    "readline": "^1.3.0",
+    "readline-sync": "^1.4.10",
+    "xml2js": "^0.4.23"
+  }
+}
