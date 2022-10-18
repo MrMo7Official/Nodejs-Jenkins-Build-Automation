@@ -11,7 +11,7 @@ const userName = jenkinsConfig.userName;
 
 const jenkinsToken = process.env.token || jenkinsConfig.jenkinsToken  /// Your access token
 const Auth = `Basic ${Buffer.from(`${userName}:${jenkinsToken}`).toString('base64')}`
-let buildID; let jobName; let fullData; let oldData = ""; let newData; let stats = null; /// for future use
+let buildID, jobName, fullData, oldData = "", newData, stats = null; refreshRate = 2000 /// for future use
 
 let reqBuild = {
     method: 'post',
@@ -109,7 +109,7 @@ async function Logging(){
     console.log(`\x1b[34mJob : ${jobName} \x1b[0m|| \x1b[34m( Build number ${buildID} ) started...\x1b[0m`);
     console.log("\x1b[33m=====================================================\x1b[0m")
     for (;!stats;) {
-        await sleep(5000)
+        await sleep(refreshRate)
         await MakingStatsReq()
     }
     console.log("\x1b[33m=====================================================\x1b[0m")
