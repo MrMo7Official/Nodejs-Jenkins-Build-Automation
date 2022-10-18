@@ -1,8 +1,5 @@
-const readline = require('readline');
 const readlineSync = require("readline-sync");
 const axios = require("axios");
-const exec = require('child_process').exec;
-const xml2js = require('xml2js');
 const fs = require("fs-extra");
 const AdmZip = require("adm-zip")
 const zip = new AdmZip();
@@ -52,7 +49,7 @@ async function StartBuilding(){
     await listAllJobs();
     await findNextBuildID();
     await axios(reqBuild)
-        .then(function (response) {
+        .then(()=>{
             return Logging();
         })
         .catch(function (error) {
