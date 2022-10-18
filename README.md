@@ -14,7 +14,7 @@ Show all your available jobs, choose which one to build, show build logs and wil
 ### Installing process :
 #### Linux
 ```
-sudo apt install npm
+sudo apt install git npm
 git clone https://github.com/MrMo7Official/Nodejs-Jenkins-Build-Automation.git
 cd Nodejs-Jenkins-Build-Automation
 npm install
