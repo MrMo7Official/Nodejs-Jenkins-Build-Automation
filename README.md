@@ -50,5 +50,5 @@ and have fun
 * Mohamed Waheed Shalabi
 * email : mohamedshalabi.official@gmail.com
 ## Version History
-* 0.1
+* 1.0
     * first launch
