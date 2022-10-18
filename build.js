@@ -3,9 +3,9 @@ const axios = require("axios");
 const fs = require("fs-extra");
 const AdmZip = require("adm-zip")
 const zip = new AdmZip();
-require('dotenv').config();
+require('dotenv').config({ path: `${__dirname}/.env` });
 
-const jenkinsConfig = JSON.parse(fs.readFileSync('jenkinsConfig.json'));
+const jenkinsConfig = JSON.parse(fs.readFileSync(`${__dirname}/jenkinsConfig.json`));
 const jenkinsUrl = jenkinsConfig.jenkinsUrl
 const userName = jenkinsConfig.userName;
 
@@ -114,8 +114,8 @@ async function Logging(){
     }
     console.log("\x1b[33m=====================================================\x1b[0m")
     let date = new Date().getTime()
-    let logPath = `logs/${jobName}/Build_${buildID}-${date}.log`
-    let zipPath = `logs/${jobName}/Build_${buildID}-${date}.zip`;
+    let logPath = `${__dirname}/logs/${jobName}/Build_${buildID}-${date}.log`
+    let zipPath = `${__dirname}/logs/${jobName}/Build_${buildID}-${date}.zip`;
 
     await fs.outputFile(logPath, fullData, err => {
         if (err) throw err;
@@ -123,7 +123,7 @@ async function Logging(){
         zip.writeZip(zipPath);
         fs.unlink(logPath, function (err) {
             if (err) throw err;
-            console.log(`\x1b[32mlogs saved to \x1b[34m ${__dirname}/${zipPath} \x1b[0m\n`)
+            console.log(`\x1b[32mlogs saved to \x1b[34m ${zipPath} \x1b[0m\n`)
         })
     })
 }
