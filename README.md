@@ -26,7 +26,8 @@ git clone https://github.com/MrMo7Official/Nodejs-Jenkins-Build-Automation.git
 cd Nodejs-Jenkins-Build-Automation
 npm install
 ```
-### Configuration :
+&nbsp;
+## Configuration :
 * make sure to change ```jenkinsConfig.json``` configuration for example :
 ```
 {
