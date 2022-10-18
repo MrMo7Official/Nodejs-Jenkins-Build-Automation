@@ -26,7 +26,6 @@ git clone https://github.com/MrMo7Official/Nodejs-Jenkins-Build-Automation.git
 cd Nodejs-Jenkins-Build-Automation
 npm install
 ```
-&nbsp;
 ### Configuration :
 * make sure to change ```jenkinsConfig.json``` configuration for example :
 ```
@@ -41,17 +40,14 @@ npm install
 * 2- click at your profile picture
 * 3- configure
 * 4- Api Token
-&nbsp;
 ### How to run :
 ```
 node build.js
 ```
 and have fun
-&nbsp;
 ## Author and contact info 
 * Mohamed Waheed Shalabi
 * email : mohamedshalabi.official@gmail.com
-&nbsp;
 ## Version History
 * 0.1
     * first launch
