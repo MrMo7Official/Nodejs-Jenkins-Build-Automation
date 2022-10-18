@@ -1,4 +1,4 @@
-# Nodejs project build automation
+# NodeJS project build automation
 a project that helps you build jenkins jobs automatically using NodeJS
 &nbsp;
 ## Description
